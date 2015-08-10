@@ -15,6 +15,8 @@ var mimeTypes =
 }; 
 //create server 
 http.createServer(function(req, res){
+	var port = process.env.PORT || 3000;
+    app.listen(port);
 	var uri = url.parse(req.url).pathname; 
 	var fileName = path.join(process.cwd(), unescape(uri)); 
 		console.log('loading ' + uri);
@@ -46,5 +48,5 @@ http.createServer(function(req, res){
 			res.write('500 internal error \n'); 
 			res.end()
 		}
-		}).listen(3000); 
+		}).listen(PORT); 
 
