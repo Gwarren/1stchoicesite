@@ -1,0 +1,14 @@
+{
+  "name": "firstchoice",
+  "version": "1.0.0",
+  "description": "small site for landscaping company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grant Warren",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^1.4.0"
+  }
+}
